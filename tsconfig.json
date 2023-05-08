@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    "baseUrl": "./",
+    "paths": {
+      "*": ["./*"]
+    },
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    "removeComments": false,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+  },
+  "include": [".", ".*.js"],
+  "exclude": ["node_modules", "dist", "tests", "**/*.map"]
+}

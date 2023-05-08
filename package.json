@@ -1,0 +1,47 @@
+{
+  "name": "hypicle",
+  "version": "0.1.3",
+  "description": "Hypixel API Client",
+  "module": "dist/index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "./dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "lint": "eslint --ext .ts .",
+    "lint:fix": "eslint --fix --ext .ts .",
+    "test": "jest tests",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zielin0/hypicle.git"
+  },
+  "keywords": [
+    "hypixel",
+    "minecraft",
+    "api",
+    "client"
+  ],
+  "author": "Zielino",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Zielin0/hypicle/issues"
+  },
+  "homepage": "https://github.com/Zielin0/hypicle#readme",
+  "devDependencies": {
+    "@jest/globals": "^29.5.0",
+    "@types/node": "^18.15.0",
+    "@typescript-eslint/eslint-plugin": "^5.54.1",
+    "@typescript-eslint/parser": "^5.54.1",
+    "dotenv": "^16.0.3",
+    "eslint": "^8.35.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "ts-jest": "^29.0.5",
+    "typescript": "^4.9.5"
+  }
+}
