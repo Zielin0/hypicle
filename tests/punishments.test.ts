@@ -1,7 +1,7 @@
 import { describe, expect, test } from '@jest/globals';
 import { Hypicle } from '../client';
 import { API_KEY } from './_env';
-import { getPunishments } from '../api/punishments/punishments.service';
+import { getPunishments } from '../api';
 
 describe('Endpoints', () => {
   describe('/punishmentstats', () => {
