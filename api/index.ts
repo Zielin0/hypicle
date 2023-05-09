@@ -9,3 +9,6 @@ export * from './punishments/punishments.service';
 
 export * from './boosters/boosters.types';
 export * from './boosters/boosters.service';
+
+export * from './status/status.types';
+export * from './status/status.service';
