@@ -4,5 +4,5 @@ export interface Punishments {
   staff_rollingDaily: number,
   watchdog_total: number,
   watchdog_rollingDaily: number,
-  staff_total: number
+  staff_total: number,
 }
