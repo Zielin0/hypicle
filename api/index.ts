@@ -12,3 +12,7 @@ export * from './boosters/boosters.service';
 
 export * from './status/status.types';
 export * from './status/status.service';
+
+export * from './recentgames/recentgames.types';
+export * from './recentgames/recentgames.service';
+
