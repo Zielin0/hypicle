@@ -19,6 +19,6 @@
     "moduleResolution": "node",
     "noEmit": true
   },
-  "include": [".", ".*.js", "tests"],
-  "exclude": ["node_modules", "dist", "**/*.map"]
+  "include": [".", ".*.js"],
+  "exclude": ["node_modules", "tests", "dist", "**/*.map"]
 }
