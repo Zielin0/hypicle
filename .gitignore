@@ -41,7 +41,7 @@ config.*
 *.env
 
 # Temp files
-temp.*
+tests/temp.ts
 
 # Logs
 logs/

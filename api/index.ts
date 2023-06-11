@@ -16,3 +16,5 @@ export * from './status/status.handler';
 export * from './recentgames/recentgames.types';
 export * from './recentgames/recentgames.handler';
 
+export * from './leaderboards/leaderboards.types';
+export * from './leaderboards/leaderboards.handler';
