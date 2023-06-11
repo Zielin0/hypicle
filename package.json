@@ -1,6 +1,6 @@
 {
   "name": "hypicle",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Hypixel API Client",
   "module": "dist/index.js",
   "main": "dist/index.js",
