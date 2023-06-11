@@ -17,7 +17,6 @@
     "removeComments": false,
     "allowSyntheticDefaultImports": true,
     "moduleResolution": "node",
-    "noEmit": true
   },
   "include": [".", ".*.js"],
   "exclude": ["node_modules", "tests", "dist", "**/*.map"]
