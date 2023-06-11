@@ -5,7 +5,7 @@ import { getPunishments } from '../api';
 
 describe('Endpoints', () => {
   describe('/punishmentstats', () => {
-    test("Punishment Stats", async () => {
+    test('Punishment Stats', async () => {
       const client = new Hypicle(API_KEY);
 
       const punishments = await getPunishments(client);

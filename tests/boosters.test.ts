@@ -5,7 +5,7 @@ import { getBoosters } from '../api';
 
 describe('Endpoints', () => {
   describe('/boosters', () => {
-    test("Boosters Stats", async () => {
+    test('Boosters Stats', async () => {
       const client = new Hypicle(API_KEY);
 
       const boosters = await getBoosters(client);
