@@ -32,9 +32,19 @@ interface HypixelError {
 }
 
 export class HypicleError extends Error {
-  constructor(message: string, public readonly status: number) {
+  public readonly success: boolean;
+
+  public readonly throttle?: boolean;
+
+  public readonly global?: boolean;
+
+  constructor(message: string, public readonly status: number, success: boolean, throttle?: boolean, global?: boolean) {
     super(message);
     this.name = 'HypicleError' + status;
+
+    this.success = success;
+    this.throttle = throttle;
+    this.global = global;
   }
 }
 
@@ -84,10 +94,10 @@ export class Hypicle implements Client {
       try {
         error = await res.json() as HypixelError;
       } catch (_) {
-        throw new HypicleError("Couldn't read response body", res.status);
+        throw new HypicleError("Couldn't read response body", res.status, false);
       }
 
-      throw new HypicleError(error.cause, res.status);
+      throw new HypicleError(error.cause, res.status, false);
     };
 
     const res = await call();
