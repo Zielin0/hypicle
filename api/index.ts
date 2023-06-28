@@ -18,3 +18,6 @@ export * from './recentgames/recentgames.handler';
 
 export * from './leaderboards/leaderboards.types';
 export * from './leaderboards/leaderboards.handler';
+
+export * from './player/player.types';
+export * from './player/player.handler';
