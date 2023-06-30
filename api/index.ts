@@ -21,3 +21,6 @@ export * from './leaderboards/leaderboards.handler';
 
 export * from './player/player.types';
 export * from './player/player.handler';
+
+export * from './guild/guild.types';
+export * from './guild/guild.handler';
