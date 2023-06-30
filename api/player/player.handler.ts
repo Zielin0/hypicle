@@ -1,6 +1,6 @@
 import { Client } from '../../client';
 import { IPlayer, PlayerResponse, SocialMedia } from './player.types';
-import { getStatus, Session } from '../index';
+import { getGuildByPlayer, getStatus, Guild, Session } from '../index';
 import { Stats } from './stats.handler';
 
 export class Player {
@@ -37,6 +37,11 @@ export class Player {
 
   async getStatus(): Promise<Session> {
     return (await getStatus(this.#client, this.#uuid)).session;
+  }
+
+  async getGuild(): Promise<Guild | null> {
+    const { guild } = await getGuildByPlayer(this.#client, this.#uuid);
+    return guild ?? null;
   }
 
   async isStaff(): Promise<boolean> {
