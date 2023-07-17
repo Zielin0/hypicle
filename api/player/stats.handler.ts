@@ -1,3 +1,5 @@
+import { BedwarsMinigame, SkyWarsMinigame } from './minigames.handler';
+import { Player } from './player.handler';
 import {
   ArcadeStats,
   ArenaStats,
@@ -9,8 +11,8 @@ import {
   HousingStats,
   HungerGamesStats,
   LegacyStats,
-  MainLobbyStats,
   MCGOStats,
+  MainLobbyStats,
   MurderMysteryStats,
   PaintballStats,
   PlayerStats,
@@ -26,7 +28,6 @@ import {
   WallsStats,
   WoolGamesStats,
 } from './player.types';
-import { Player } from './player.handler';
 
 type MinigameStatsMap = {
   Bedwars: BedwarsStats;
@@ -57,19 +58,27 @@ type MinigameStatsMap = {
 };
 
 export class Stats {
-  readonly #player: Player;
+  readonly player: Player;
 
   constructor(player: Player) {
-    this.#player = player;
+    this.player = player;
   }
 
   async get(): Promise<PlayerStats | undefined> {
-    return (await this.#player.getPlayerData()).player.stats;
+    return (await this.player.getPlayerData()).player.stats;
   }
 
   async getByName<T extends keyof MinigameStatsMap>(
     minigame: T,
   ): Promise<MinigameStatsMap[T] | undefined> {
     return (await this.get())?.[minigame];
+  }
+
+  getBedwars(): BedwarsMinigame {
+    return new BedwarsMinigame(this);
+  }
+
+  getSkyWars(): SkyWarsMinigame {
+    return new SkyWarsMinigame(this);
   }
 }
