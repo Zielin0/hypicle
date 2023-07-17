@@ -57,27 +57,51 @@ type MinigameStatsMap = {
   Housing: HousingStats;
 };
 
+/**
+ * Get various minigame stats from the {@link Player}
+ * @class
+ */
 export class Stats {
   readonly player: Player;
 
+  /**
+   * Constructs the Stats class
+   * 
+   * @param player - The Player instance for which the statistics are collected
+   */
   constructor(player: Player) {
     this.player = player;
   }
 
+  /**
+   * Get all minigame stats
+   */
   async get(): Promise<PlayerStats | undefined> {
     return (await this.player.getPlayerData()).player.stats;
   }
 
+  /**
+   * Get one minigame stats by the name
+   * 
+   * @param minigame - The name of the minigame for which the method returns stats
+   * @returns The stats interface for the provided minigame
+   */
   async getByName<T extends keyof MinigameStatsMap>(
     minigame: T,
   ): Promise<MinigameStatsMap[T] | undefined> {
     return (await this.get())?.[minigame];
   }
 
+  /**
+   * Get BedWars-specific stats
+   */
   getBedwars(): BedwarsMinigame {
     return new BedwarsMinigame(this);
   }
 
+  /**
+   * Get SkyWars-specific stats
+   */
   getSkyWars(): SkyWarsMinigame {
     return new SkyWarsMinigame(this);
   }

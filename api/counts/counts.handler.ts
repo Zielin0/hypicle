@@ -1,4 +1,5 @@
 import { Client } from '../../client';
+import { FieldMap } from '../../utils';
 import {
   Arcade, Battleground,
   Bedwars,
@@ -13,7 +14,6 @@ import {
   TournamentLobby, UHC,
   Walls, WoolGames,
 } from './counts.types';
-import { FieldMap } from '../../utils';
 
 const mapping: FieldMap<Counts> = {
   success: 'success',
@@ -126,140 +126,308 @@ const mapping: FieldMap<Counts> = {
   playercount: 'players',
 };
 
+/**
+ * Get global active players count statistics
+ * 
+ * @param client - The Hypicle Client
+ * @returns Global {@link Counts} statistics
+ */
 export const getCounts = async (client: Client) => {
   return await client.fetchMapping<Counts>('counts', mapping);
 };
 
+/**
+ * Get active players count statistics in Main Lobby
+ * 
+ * @param client - The Hypicle Client
+ * @returns Global {@link MainLobby} counts statistics
+ */
 export const getMainLobby = async (client: Client) => {
   const counts = await getCounts(client);
   return counts.games.main_lobby as MainLobby;
 };
 
+/**
+ * Get active players count statistics in Tournament Lobby
+ * 
+ * @param client - The Hypicle Client
+ * @returns Global {@link TournamentLobby} counts statistics
+ */
 export const getTournamentLobby = async (client: Client) => {
   const counts = await getCounts(client);
   return counts.games.tournament_lobby as TournamentLobby;
 };
 
+/**
+ * Get active players count statistics in SMP Servers
+ * 
+ * @param client - The Hypicle Client
+ * @returns Global {@link SMP} Servers counts statistics
+ */
 export const getSMP = async (client: Client) => {
   const counts = await getCounts(client);
   return counts.games.smp as SMP;
 };
 
+/**
+ * Get active players count statistics in Legacy Games
+ * 
+ * @param client - The Hypicle Client
+ * @returns Global {@link Legacy} Games counts statistics
+ */
 export const getLegacy = async (client: Client) => {
   const counts = await getCounts(client);
   return counts.games.legacy as Legacy;
 };
 
+/**
+ * Get active players count statistics in SkyWars
+ * 
+ * @param client - The Hypicle Client
+ * @returns Global {@link Skywars} counts statistics
+ */
 export const getSkywars = async (client: Client) => {
   const counts = await getCounts(client);
   return counts.games.skywars as Skywars;
 };
 
+/**
+ * Get active players count statistics in Pit
+ * 
+ * @param client - The Hypicle Client
+ * @returns Global {@link Pit} counts statistics
+ */
 export const getPit = async (client: Client) => {
   const counts = await getCounts(client);
   return counts.games.pit as Pit;
 };
 
+/**
+ * Get active players count statistics in Build Battle
+ * 
+ * @param client - The Hypicle Client
+ * @returns Global {@link BuildBattle} counts statistics
+ */
 export const getBuildBattle = async (client: Client) => {
   const counts = await getCounts(client);
   return counts.games.build_battle as BuildBattle;
 };
 
+/**
+ * Get active players count statistics in Replays
+ * 
+ * @param client - The Hypicle Client
+ * @returns Global {@link Replay}s counts statistics
+ */
 export const getReplay = async (client: Client) => {
   const counts = await getCounts(client);
   return counts.games.replay as Replay;
 };
 
+/**
+ * Get active players count statistics in Walls
+ * 
+ * @param client - The Hypicle Client
+ * @returns Global {@link Walls} counts statistics
+ */
 export const getWalls = async (client: Client) => {
   const counts = await getCounts(client);
   return counts.games.walls as Walls;
 };
 
+/**
+ * Get active players count statistics in Smash Heroes
+ * 
+ * @param client - The Hypicle Client
+ * @returns Global {@link SuperSmash} counts statistics
+ */
 export const getSuperSmash = async (client: Client) => {
   const counts = await getCounts(client);
   return counts.games.super_smash as SuperSmash;
 };
 
+/**
+ * Get active players count statistics in BedWars
+ * 
+ * @param client - The Hypicle Client
+ * @returns Global {@link Bedwars} counts statistics
+ */
 export const getBedwars = async (client: Client) => {
   const counts = await getCounts(client);
   return counts.games.bedwars as Bedwars;
 };
 
+/**
+ * Get active players count statistics in Arcade Games
+ * 
+ * @param client - The Hypicle Client
+ * @returns Global {@link Arcade} Games counts statistics
+ */
 export const getArcade = async (client: Client) => {
   const counts = await getCounts(client);
   return counts.games.arcade as Arcade;
 };
 
+/**
+ * Get active players count statistics in Murder Mystery
+ * 
+ * @param client - The Hypicle Client
+ * @returns Global {@link MurderMystery} Games counts statistics
+ */
 export const getMurderMystery = async (client: Client) => {
   const counts = await getCounts(client);
   return counts.games.murder_mystery as MurderMystery;
 };
 
+/**
+ * Get active players count statistics in UHC
+ * 
+ * @param client - The Hypicle Client
+ * @returns Global {@link UHC} counts statistics
+ */
 export const getUhc = async (client: Client) => {
   const counts = await getCounts(client);
   return counts.games.uhc as UHC;
 };
 
+/**
+ * Get active players count statistics in Wool Wars
+ * 
+ * @param client - The Hypicle Client
+ * @returns Global {@link WoolGames} counts statistics
+ */
 export const getWoolGames = async (client: Client) => {
   const counts = await getCounts(client);
   return counts.games.wool_games as WoolGames;
 };
 
+/**
+ * Get active players count statistics in Speed UHC
+ * 
+ * @param client - The Hypicle Client
+ * @returns Global {@link SpeedUhc} counts statistics
+ */
 export const getSpeedUhc = async (client: Client) => {
   const counts = await getCounts(client);
   return counts.games.speed_uhc as SpeedUhc;
 };
 
+/**
+ * Get active players count statistics in Housing
+ * 
+ * @param client - The Hypicle Client
+ * @returns Global {@link Housing} counts statistics
+ */
 export const getHousing = async (client: Client) => {
   const counts = await getCounts(client);
   return counts.games.housing as Housing;
 };
 
+/**
+ * Get active players count statistics in Duels
+ * 
+ * @param client - The Hypicle Client
+ * @returns Global {@link Duels} counts statistics
+ */
 export const getDuels = async (client: Client) => {
   const counts = await getCounts(client);
   return counts.games.duels as Duels;
 };
 
+/**
+ * Get active players count statistics in TNT Games
+ * 
+ * @param client - The Hypicle Client
+ * @returns Global {@link TntGames} counts statistics
+ */
 export const getTntGames = async (client: Client) => {
   const counts = await getCounts(client);
   return counts.games.tntgames as TntGames;
 };
 
+/**
+ * Get active players count statistics in Warlords
+ * 
+ * @param client - The Hypicle Client
+ * @returns Global {@link Battleground} counts statistics
+ */
 export const getBattleground = async (client: Client) => {
   const counts = await getCounts(client);
   return counts.games.battleground as Battleground;
 };
 
+/**
+ * Get active players count statistics in Survival Games
+ * 
+ * @param client - The Hypicle Client
+ * @returns Global {@link SurvivalGames} counts statistics
+ */
 export const getSurvivalGames = async (client: Client) => {
   const counts = await getCounts(client);
   return counts.games.survival_games as SurvivalGames;
 };
 
+/**
+ * Get active players count statistics in SkyBlock
+ * 
+ * @param client - The Hypicle Client
+ * @returns Global {@link SkyBlock} counts statistics
+ */
 export const getSkyblock = async (client: Client) => {
   const counts = await getCounts(client);
   return counts.games.skyblock as SkyBlock;
 };
 
+/**
+ * Get active players count statistics in Prototype Games
+ * 
+ * @param client - The Hypicle Client
+ * @returns Global {@link Prototype} Games counts statistics
+ */
 export const getPrototype = async (client: Client) => {
   const counts = await getCounts(client);
   return counts.games.prototype as Prototype;
 };
 
+/**
+ * Get active players count statistics in Cops and Crims
+ * 
+ * @param client - The Hypicle Client
+ * @returns Global {@link MCGO} counts statistics
+ */
 export const getMCGO = async (client: Client) => {
   const counts = await getCounts(client);
   return counts.games.mcgo as MCGO;
 };
 
+/**
+ * Get active players count statistics in Limbo
+ * 
+ * @param client - The Hypicle Client
+ * @returns Global {@link Limbo} counts statistics
+ */
 export const getLimbo = async (client: Client) => {
   const counts = await getCounts(client);
   return counts.games.limbo as Limbo;
 };
 
+/**
+ * Get active Idle players count statistics
+ * 
+ * @param client - The Hypicle Client
+ * @returns Global {@link Idle} players counts statistics
+ */
 export const getIdle = async (client: Client) => {
   const counts = await getCounts(client);
   return counts.games.idle as Idle;
 };
 
+/**
+ * Get active players count statistics in Queue
+ * 
+ * @param client - The Hypicle Client
+ * @returns Global {@link Queue} counts statistics
+ */
 export const getQueue = async (client: Client) => {
   const counts = await getCounts(client);
   return counts.games.queue as Queue;
