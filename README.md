@@ -47,10 +47,10 @@ See full documentation [here](./docs).
 
 <!-- ## Examples: -->
 
-### License
+## License
 
 This project is under the [MIT](./LICENSE) License.
 
-### Additional Resources
+## Additional Resources
 
 - [**Official Hypixel API Docs**](https://api.hypixel.net/): Detailed API documentation for endpoint information, parameters, and response formats.
