@@ -91,7 +91,6 @@ export class HypicleError extends Error {
 
 /**
  * The Hypixel API Client implementation
- * {@inheritdoc Client}
  * @class
  */
 export class Hypicle implements Client {
