@@ -359,7 +359,7 @@ export class SkyWarsMinigame {
   }
 
   /**
-   * Get the amout of opened chests
+   * Get the amount of opened chests
    */
   async getChestsOpened(): Promise<number> {
     return (await this.get())!.chests_opened;
