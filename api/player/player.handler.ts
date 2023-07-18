@@ -96,7 +96,8 @@ export class Player {
    */
   async getHighestRank(): Promise<string> {
     const { rank, monthlyPackageRank, newPackageRank, packageRank } = (await this.getPlayerData()).player;
-    const highest = [rank, monthlyPackageRank, newPackageRank, packageRank].find(Boolean);
+    const ranks = [rank, monthlyPackageRank, newPackageRank, packageRank];
+    const highest = ranks.filter((r) => r !== 'NONE' && r !== undefined)[0];
 
     return highest ?? 'NONE';
   }
