@@ -19,6 +19,7 @@ __pycache__/
 # Lock files
 *.lock
 package-lock.json
+pnpm-lock.yaml
 
 # .vscode folder
 .vscode/

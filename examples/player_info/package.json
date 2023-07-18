@@ -1,0 +1,17 @@
+{
+  "name": "player_info",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node index.ts",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "Zielino",
+  "license": "MIT",
+  "dependencies": {
+    "dayjs": "^1.11.9",
+    "hypicle": "^0.2.5"
+  }
+}
