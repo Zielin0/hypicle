@@ -16,6 +16,10 @@ console.log(`Rank: ${rank}`);
 console.log(`Online: ${status.online}`);
 ```
 
+## Player info example
+
+See player info example in [`player_info/`](./player_info/)
+
 ---
 
 **There will be more examples over time**
