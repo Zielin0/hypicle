@@ -19,5 +19,5 @@
     "moduleResolution": "node",
   },
   "include": [".", ".*.js"],
-  "exclude": ["node_modules", "tests", "dist", "**/*.map"]
+  "exclude": ["node_modules", "tests", "examples", "dist", "**/*.map"]
 }
