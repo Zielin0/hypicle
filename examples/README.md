@@ -18,7 +18,21 @@ console.log(`Online: ${status.online}`);
 
 ## Player info example
 
-See player info example in [`player_info/`](./player_info/)
+Running:
+
+```sh
+$ cd examples/player_info
+$ cp config.example.json config.json
+```
+
+Replace `API_KEY` with your actual api key.
+
+```sh
+$ npm install
+$ ts-node index.ts <player-name>
+```
+
+See player info example code in [`player_info/`](./player_info/)
 
 ---
 
