@@ -26,10 +26,16 @@ module.exports = {
     '@typescript-eslint/return-await': 0,
     // Add any additional rules here, as needed
   },
-  ignorePatterns: ['tests/**/*.ts'],
+  ignorePatterns: ['tests/**/*.ts', 'examples/**/*.ts'],
   overrides: [
     {
       files: ['tests/**/*.ts'],
+      parserOptions: {
+        project: './tsconfig.json',
+      },
+    },
+    {
+      files: ['examples/**/*.ts'],
       parserOptions: {
         project: './tsconfig.json',
       },
