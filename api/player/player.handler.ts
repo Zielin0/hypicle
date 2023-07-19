@@ -24,7 +24,8 @@ export class PlayerLeveling {
   /**
    * Get exact network level by provided experience
    * 
-   * @param exp - The network experience
+   * @param exp
+   * The network experience
    * @return The exact network level (float)
    */
   public static getExactLevel(exp: number): number {
@@ -34,7 +35,8 @@ export class PlayerLeveling {
   /**
    * Get network level by provided experience
    * 
-   * @param exp - The network experience
+   * @param exp
+   * The network experience
    * @returns The network level
    */
   public static getLevel(exp: number): number {
