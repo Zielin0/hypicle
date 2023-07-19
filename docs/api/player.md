@@ -19,6 +19,10 @@ List of all `Player` methods:
 - `get` - Get the player
 - `getUUID` - Get the UUID of the player
 - `getStatus` - Get the status of the player
+- `getKarma` - Get the karma of the player
+- `getNetworkExp` - Get the network experience of the player
+- `getLevel` - Get the network level of the player
+- `getExactLevel` - Get exact network level of the player
 - `getGuild` - Get the guild membership of the player or null
 - `isStaff` - Check if the player is in the staff team
 - `getHighestRank` - Get the highest rank of the player
@@ -105,11 +109,24 @@ List of all `SkyWarsMinigame` methods:
 
 ### Leveling
 
-Both BedWars and SkyWars have their own leveling system.
+#### Player has its own leveling system.
+
+See [Player](https://github.com/Plancke/hypixel-php/blob/master/src/util/Leveling.php) Leveling system implementation by [Plancke](https://github.com/plancke).
+
+You can use `PlayerLeveling` in your project.
+
+List of all `PlayerLeveling` methods:
+- `getExactLevel` - Get exact network level by provided experience
+- `getLevel` - Get network level by provided experience
+- `getPercentageToNextLevel` - Get percentage to the next level
+- `getTotalExpToLevel` - Get the experience needed to reach provided level
+- `getTotalExpToFullLevel` - Get the total experience needed to reach provided level
+
+#### Both BedWars and SkyWars also have their own leveling system.
 
 See [SkyWars](https://github.com/Plancke/hypixel-php/blob/master/src/util/games/skywars/ExpCalculator.php) & [BedWars](https://github.com/Plancke/hypixel-php/blob/master/src/util/games/bedwars/ExpCalculator.php) Leveling system implementation by [Plancke](https://github.com/plancke).
 
-You can use both `BedwarsLeveling` & `SkyWarsLeveling` in your project.
+You can also use both `BedwarsLeveling` & `SkyWarsLeveling` in your project.
 
 List of all `BedwarsLeveling` methods:
 - `getLevelByExp` - Get BedWars Level by provided experience
