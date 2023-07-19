@@ -1,6 +1,5 @@
 import { describe, expect, test } from '@jest/globals';
-import { PlayerLeveling } from '../api';
-import { BedwarsLeveling, SkyWarsLeveling } from '../api/player/minigames.handler';
+import { BedwarsLeveling, PlayerLeveling, SkyWarsLeveling } from '../api';
 
 describe('Leveling', () => {
     test('BedWars Leveling', async () => {
