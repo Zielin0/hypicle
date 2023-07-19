@@ -22,7 +22,8 @@ export class BedwarsLeveling {
   /**
    * Get BedWars Level by provided experience
    * 
-   * @param exp - The BedWars Experience
+   * @param exp
+   * The BedWars Experience
    * @returns The BedWars Level based on the experience
    */
   public static getLevelByExp(exp: number): number {
@@ -45,7 +46,8 @@ export class BedwarsLeveling {
   /**
    * Get BedWars Experience by provided Level
    * 
-   * @param level - The BedWars Level
+   * @param level
+   * The BedWars Level
    * @returns The BedWars Experience based on the Level
    */
   public static getExpByLevel(level: number): number {
@@ -61,7 +63,8 @@ export class BedwarsLeveling {
   /**
    * From hypixel-php: `Returns "2" instead of "102" if prestiges happen every 100 levels`
    * 
-   * @param level - The BedWars Level
+   * @param level
+   * The BedWars Level
    * @returns The Level respecting the prestige
    */
   private static getLevelRespectingPrestige(level: number): number {
@@ -79,7 +82,8 @@ export class BedwarsMinigame {
   /**
    * Constructs the BedwarsMinigame class
    * 
-   * @param stats - The {@link Stats} of the player
+   * @param stats
+   * The {@link Stats} of the player
    */
   constructor(stats: Stats) {
     this.#stats = stats;
@@ -218,7 +222,8 @@ export class SkyWarsLeveling {
   /**
    * Get the progress of the current level
    * 
-   * @param exp - The SkyWars experience
+   * @param exp
+   * The SkyWars experience
    * @returns The experience progress of the current level
    */
   public static getProgressCurrentLevel(exp: number): number {
@@ -230,7 +235,8 @@ export class SkyWarsLeveling {
   /**
    * Get SkyWars Level by provided experience
    * 
-   * @param exp - The SkyWars Experience
+   * @param exp
+   * The SkyWars Experience
    * @returns The SkyWars Level based on the experience
    */
   public static getLevelByExp(exp: number): number {
@@ -252,7 +258,8 @@ export class SkyWarsLeveling {
   /**
    * Get SkyWars Experience by provided Level
    * 
-   * @param level - The SkyWars Level
+   * @param level
+   * The SkyWars Level
    * @returns The SkyWars Experience based on the Level
    */
   public static getExpByLevel(level: number): number {
@@ -265,7 +272,8 @@ export class SkyWarsLeveling {
   /**
    * Get the total experience by provided Level
    * 
-   * @param level - The SkyWars Level
+   * @param level
+   * The SkyWars Level
    * @returns Total SkyWars experience based on the Level
    */
   private static getTotalExpByLevel(level: number): number {
@@ -296,7 +304,8 @@ export class SkyWarsMinigame {
   /**
    * Constructs the SkywarsMinigame class
    * 
-   * @param stats - The {@link Stats} of the player
+   * @param stats
+   * The {@link Stats} of the player
    */
   constructor(stats: Stats) {
     this.#stats = stats;

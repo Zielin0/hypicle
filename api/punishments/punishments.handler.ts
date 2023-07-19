@@ -4,7 +4,8 @@ import { Punishments } from './punishments.types';
 /**
  * Get global punishment statistics
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global {@link Punishments} data
  */
 export const getPunishments = async (client: Client) => {

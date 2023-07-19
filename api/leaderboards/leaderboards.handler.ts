@@ -4,7 +4,8 @@ import { Leaderboard, Leaderboards } from './leaderboards.types';
 /**
  * Get global Leaderboards statistics
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global {@link Leaderboards} statistics
  */
 export const getLeaderboards = async (client: Client) => {
@@ -14,7 +15,8 @@ export const getLeaderboards = async (client: Client) => {
 /**
  * Get global Duels Leaderboards statistics
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global Duels {@link Leaderboards} statistics
  */
 export const getLeaderboardsDuels = async (client: Client) => {
@@ -25,7 +27,8 @@ export const getLeaderboardsDuels = async (client: Client) => {
 /**
  * Get global Crazy Walls Leaderboards statistics
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global Crazy Walls {@link Leaderboards} statistics
  */
 
@@ -37,7 +40,8 @@ export const getLeaderboardsTrueCombat = async (client: Client) => {
 /**
  * Get global SpeedUHC Leaderboards statistics
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global SpeedUHC {@link Leaderboards} statistics
  */
 export const getLeaderboardsSpeedUhc = async (client: Client) => {
@@ -48,7 +52,8 @@ export const getLeaderboardsSpeedUhc = async (client: Client) => {
 /**
  * Get global Paintball Leaderboards statistics
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global Paintball {@link Leaderboards} statistics
  */
 export const getLeaderboardsPaintball = async (client: Client) => {
@@ -59,7 +64,8 @@ export const getLeaderboardsPaintball = async (client: Client) => {
 /**
  * Get global Murder Mystery Leaderboards statistics
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global Murder Mystery {@link Leaderboards} statistics
  */
 export const getLeaderboardsMurderMystery = async (client: Client) => {
@@ -70,7 +76,8 @@ export const getLeaderboardsMurderMystery = async (client: Client) => {
 /**
  * Get global SkyWars Leaderboards statistics
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global SkyWars {@link Leaderboards} statistics
  */
 export const getLeaderboardsSkywars = async (client: Client) => {
@@ -81,7 +88,8 @@ export const getLeaderboardsSkywars = async (client: Client) => {
 /**
  * Get global BedWars Leaderboards statistics
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global BedWars {@link Leaderboards} statistics
  */
 export const getLeaderboardsBedwars = async (client: Client) => {
@@ -92,7 +100,8 @@ export const getLeaderboardsBedwars = async (client: Client) => {
 /**
  * Get global Prototype Leaderboards statistics
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global Prototype {@link Leaderboards} statistics
  */
 export const getLeaderboardsPrototype = async (client: Client) => {
@@ -103,7 +112,8 @@ export const getLeaderboardsPrototype = async (client: Client) => {
 /**
  * Get global Turbo Kart Racers Leaderboards statistics
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global Turbo Kart Racers {@link Leaderboards} statistics
  */
 export const getLeaderboardsGingerbread = async (client: Client) => {
@@ -114,7 +124,8 @@ export const getLeaderboardsGingerbread = async (client: Client) => {
 /**
  * Get global Wool Wars Leaderboards statistics
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global Wool Wars {@link Leaderboards} statistics
  */
 export const getLeaderboardsWoolGames = async (client: Client) => {
@@ -125,7 +136,8 @@ export const getLeaderboardsWoolGames = async (client: Client) => {
 /**
  * Get global TNT Games Leaderboards statistics
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global TNT Games {@link Leaderboards} statistics
  */
 export const getLeaderboardsTntGames = async (client: Client) => {
@@ -136,7 +148,8 @@ export const getLeaderboardsTntGames = async (client: Client) => {
 /**
  * Get global UHC Leaderboards statistics
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global UHC {@link Leaderboards} statistics
  */
 export const getLeaderboardsUhc = async (client: Client) => {
@@ -147,7 +160,8 @@ export const getLeaderboardsUhc = async (client: Client) => {
 /**
  * Get global Build Battle Leaderboards statistics
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global Build Battle {@link Leaderboards} statistics
  */
 export const getLeaderboardsBuildBattle = async (client: Client) => {
@@ -158,7 +172,8 @@ export const getLeaderboardsBuildBattle = async (client: Client) => {
 /**
  * Get global Mega Walls Leaderboards statistics
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global Mega Walls {@link Leaderboards} statistics
  */
 export const getLeaderboardsWalls3 = async (client: Client) => {
@@ -169,7 +184,8 @@ export const getLeaderboardsWalls3 = async (client: Client) => {
 /**
  * Get global VampireZ Leaderboards statistics
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global VampireZ {@link Leaderboards} statistics
  */
 export const getLeaderboardsVampirez = async (client: Client) => {
@@ -180,7 +196,8 @@ export const getLeaderboardsVampirez = async (client: Client) => {
 /**
  * Get global Arcade Leaderboards statistics
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global Arcade {@link Leaderboards} statistics
  */
 export const getLeaderboardsArcade = async (client: Client) => {
@@ -191,7 +208,8 @@ export const getLeaderboardsArcade = async (client: Client) => {
 /**
  * Get global Walls Leaderboards statistics
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global Walls {@link Leaderboards} statistics
  */
 export const getLeaderboardsWalls = async (client: Client) => {
@@ -202,7 +220,8 @@ export const getLeaderboardsWalls = async (client: Client) => {
 /**
  * Get global Survival Games  Leaderboards statistics
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global Survival Games {@link Leaderboards} statistics
  */
 export const getLeaderboardsSurvivalGames = async (client: Client) => {
@@ -213,7 +232,8 @@ export const getLeaderboardsSurvivalGames = async (client: Client) => {
 /**
  * Get global Smash Heroes Leaderboards statistics
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global Smash Heroes {@link Leaderboards} statistics
  */
 export const getLeaderboardsSuperSmash = async (client: Client) => {
@@ -224,7 +244,8 @@ export const getLeaderboardsSuperSmash = async (client: Client) => {
 /**
  * Get global SkyClash Leaderboards statistics
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global SkyClash {@link Leaderboards} statistics
  */
 export const getLeaderboardsSkyclash = async (client: Client) => {
@@ -235,7 +256,8 @@ export const getLeaderboardsSkyclash = async (client: Client) => {
 /**
  * Get global Quake Leaderboards statistics
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global Quake {@link Leaderboards} statistics
  */
 export const getLeaderboardsQuakecraft = async (client: Client) => {
@@ -246,7 +268,8 @@ export const getLeaderboardsQuakecraft = async (client: Client) => {
 /**
  * Get global Cops and Crims Leaderboards statistics
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global Cops and Crims {@link Leaderboards} statistics
  */
 export const getLeaderboardsMCGO = async (client: Client) => {
@@ -257,7 +280,8 @@ export const getLeaderboardsMCGO = async (client: Client) => {
 /**
  * Get global Warlords Leaderboards statistics
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global Warlords {@link Leaderboards} statistics
  */
 export const getLeaderboardsBattleground = async (client: Client) => {
@@ -268,7 +292,8 @@ export const getLeaderboardsBattleground = async (client: Client) => {
 /**
  * Get global Arena Leaderboards statistics
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global Arena {@link Leaderboards} statistics
  */
 export const getLeaderboardsArena = async (client: Client) => {

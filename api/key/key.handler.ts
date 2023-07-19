@@ -4,7 +4,8 @@ import { Key } from './key.types';
 /**
  * Get informations about the API Key
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns API {@link Key} info interface
  * @deprecated
  */

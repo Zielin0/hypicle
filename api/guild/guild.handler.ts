@@ -4,8 +4,10 @@ import { GuildResponse } from './guild.types';
 /**
  * Get Guild info by player UUID
  * 
- * @param client - The Hypicle Client
- * @param uuid - The UUID of a player
+ * @param client
+ * The Hypicle Client
+ * @param uuid
+ * The UUID of a player
  * @returns The guild's {@link GuildResponse} interface
  */
 export const getGuildByPlayer = async (client: Client, uuid: string) => {
@@ -15,8 +17,10 @@ export const getGuildByPlayer = async (client: Client, uuid: string) => {
 /**
  * Get Guild info by Guild ID
  * 
- * @param client - The Hypicle Client
- * @param id - The ID of a Guild
+ * @param client
+ * The Hypicle Client
+ * @param id
+ * The ID of a Guild
  * @returns The guild's {@link GuildResponse} interface
  */
 export const getGuildByID = async (client: Client, id: string) => {
@@ -26,8 +30,10 @@ export const getGuildByID = async (client: Client, id: string) => {
 /**
  * Get Guild info by Guild Name
  * 
- * @param client - The Hypicle Client
- * @param id - The Name of a Guild
+ * @param client
+ * The Hypicle Client
+ * @param name
+ * The Name of a Guild
  * @returns The guild's {@link GuildResponse} interface
  */
 export const getGuildByName = async (client: Client, name: string) => {

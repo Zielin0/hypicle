@@ -129,7 +129,8 @@ const mapping: FieldMap<Counts> = {
 /**
  * Get global active players count statistics
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global {@link Counts} statistics
  */
 export const getCounts = async (client: Client) => {
@@ -139,7 +140,8 @@ export const getCounts = async (client: Client) => {
 /**
  * Get active players count statistics in Main Lobby
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global {@link MainLobby} counts statistics
  */
 export const getMainLobby = async (client: Client) => {
@@ -150,7 +152,8 @@ export const getMainLobby = async (client: Client) => {
 /**
  * Get active players count statistics in Tournament Lobby
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global {@link TournamentLobby} counts statistics
  */
 export const getTournamentLobby = async (client: Client) => {
@@ -161,7 +164,8 @@ export const getTournamentLobby = async (client: Client) => {
 /**
  * Get active players count statistics in SMP Servers
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global {@link SMP} Servers counts statistics
  */
 export const getSMP = async (client: Client) => {
@@ -172,7 +176,8 @@ export const getSMP = async (client: Client) => {
 /**
  * Get active players count statistics in Legacy Games
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global {@link Legacy} Games counts statistics
  */
 export const getLegacy = async (client: Client) => {
@@ -183,7 +188,8 @@ export const getLegacy = async (client: Client) => {
 /**
  * Get active players count statistics in SkyWars
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global {@link Skywars} counts statistics
  */
 export const getSkywars = async (client: Client) => {
@@ -194,7 +200,8 @@ export const getSkywars = async (client: Client) => {
 /**
  * Get active players count statistics in Pit
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global {@link Pit} counts statistics
  */
 export const getPit = async (client: Client) => {
@@ -205,7 +212,8 @@ export const getPit = async (client: Client) => {
 /**
  * Get active players count statistics in Build Battle
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global {@link BuildBattle} counts statistics
  */
 export const getBuildBattle = async (client: Client) => {
@@ -216,7 +224,8 @@ export const getBuildBattle = async (client: Client) => {
 /**
  * Get active players count statistics in Replays
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global {@link Replay}s counts statistics
  */
 export const getReplay = async (client: Client) => {
@@ -227,7 +236,8 @@ export const getReplay = async (client: Client) => {
 /**
  * Get active players count statistics in Walls
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global {@link Walls} counts statistics
  */
 export const getWalls = async (client: Client) => {
@@ -238,7 +248,8 @@ export const getWalls = async (client: Client) => {
 /**
  * Get active players count statistics in Smash Heroes
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global {@link SuperSmash} counts statistics
  */
 export const getSuperSmash = async (client: Client) => {
@@ -249,7 +260,8 @@ export const getSuperSmash = async (client: Client) => {
 /**
  * Get active players count statistics in BedWars
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global {@link Bedwars} counts statistics
  */
 export const getBedwars = async (client: Client) => {
@@ -260,7 +272,8 @@ export const getBedwars = async (client: Client) => {
 /**
  * Get active players count statistics in Arcade Games
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global {@link Arcade} Games counts statistics
  */
 export const getArcade = async (client: Client) => {
@@ -271,7 +284,8 @@ export const getArcade = async (client: Client) => {
 /**
  * Get active players count statistics in Murder Mystery
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global {@link MurderMystery} Games counts statistics
  */
 export const getMurderMystery = async (client: Client) => {
@@ -282,7 +296,8 @@ export const getMurderMystery = async (client: Client) => {
 /**
  * Get active players count statistics in UHC
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global {@link UHC} counts statistics
  */
 export const getUhc = async (client: Client) => {
@@ -293,7 +308,8 @@ export const getUhc = async (client: Client) => {
 /**
  * Get active players count statistics in Wool Wars
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global {@link WoolGames} counts statistics
  */
 export const getWoolGames = async (client: Client) => {
@@ -304,7 +320,8 @@ export const getWoolGames = async (client: Client) => {
 /**
  * Get active players count statistics in Speed UHC
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global {@link SpeedUhc} counts statistics
  */
 export const getSpeedUhc = async (client: Client) => {
@@ -315,7 +332,8 @@ export const getSpeedUhc = async (client: Client) => {
 /**
  * Get active players count statistics in Housing
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global {@link Housing} counts statistics
  */
 export const getHousing = async (client: Client) => {
@@ -326,7 +344,8 @@ export const getHousing = async (client: Client) => {
 /**
  * Get active players count statistics in Duels
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global {@link Duels} counts statistics
  */
 export const getDuels = async (client: Client) => {
@@ -337,7 +356,8 @@ export const getDuels = async (client: Client) => {
 /**
  * Get active players count statistics in TNT Games
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global {@link TntGames} counts statistics
  */
 export const getTntGames = async (client: Client) => {
@@ -348,7 +368,8 @@ export const getTntGames = async (client: Client) => {
 /**
  * Get active players count statistics in Warlords
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global {@link Battleground} counts statistics
  */
 export const getBattleground = async (client: Client) => {
@@ -359,7 +380,8 @@ export const getBattleground = async (client: Client) => {
 /**
  * Get active players count statistics in Survival Games
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global {@link SurvivalGames} counts statistics
  */
 export const getSurvivalGames = async (client: Client) => {
@@ -370,7 +392,8 @@ export const getSurvivalGames = async (client: Client) => {
 /**
  * Get active players count statistics in SkyBlock
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global {@link SkyBlock} counts statistics
  */
 export const getSkyblock = async (client: Client) => {
@@ -381,7 +404,8 @@ export const getSkyblock = async (client: Client) => {
 /**
  * Get active players count statistics in Prototype Games
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global {@link Prototype} Games counts statistics
  */
 export const getPrototype = async (client: Client) => {
@@ -392,7 +416,8 @@ export const getPrototype = async (client: Client) => {
 /**
  * Get active players count statistics in Cops and Crims
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global {@link MCGO} counts statistics
  */
 export const getMCGO = async (client: Client) => {
@@ -403,7 +428,8 @@ export const getMCGO = async (client: Client) => {
 /**
  * Get active players count statistics in Limbo
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global {@link Limbo} counts statistics
  */
 export const getLimbo = async (client: Client) => {
@@ -414,7 +440,8 @@ export const getLimbo = async (client: Client) => {
 /**
  * Get active Idle players count statistics
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global {@link Idle} players counts statistics
  */
 export const getIdle = async (client: Client) => {
@@ -425,7 +452,8 @@ export const getIdle = async (client: Client) => {
 /**
  * Get active players count statistics in Queue
  * 
- * @param client - The Hypicle Client
+ * @param client
+ * The Hypicle Client
  * @returns Global {@link Queue} counts statistics
  */
 export const getQueue = async (client: Client) => {

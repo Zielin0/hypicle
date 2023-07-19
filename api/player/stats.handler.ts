@@ -67,7 +67,8 @@ export class Stats {
   /**
    * Constructs the Stats class
    * 
-   * @param player - The Player instance for which the statistics are collected
+   * @param player
+   * The Player instance for which the statistics are collected
    */
   constructor(player: Player) {
     this.player = player;
@@ -83,7 +84,8 @@ export class Stats {
   /**
    * Get one minigame stats by the name
    * 
-   * @param minigame - The name of the minigame for which the method returns stats
+   * @param minigame
+   * The name of the minigame for which the method returns stats
    * @returns The stats interface for the provided minigame
    */
   async getByName<T extends keyof MinigameStatsMap>(

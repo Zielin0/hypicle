@@ -24,9 +24,12 @@ export interface Client {
   /**
    * Fetches data from the specified endpoint and applies the {@link FieldMap}
    * 
-   * @param endpoint - The endpoint to fetch data from
-   * @param mapping - The Field Mapping to applly to the fetched data
-   * @param options - Optional parameters for the request
+   * @param endpoint
+   * The endpoint to fetch data from
+   * @param mapping
+   * The Field Mapping to applly to the fetched data
+   * @param options
+   * Optional parameters for the request
    * @returns A Promise that resolves to the fetched data with applied mapping
    */
   fetchMapping<R extends unknown>(
@@ -38,8 +41,10 @@ export interface Client {
   /**
    * Fetches data from the specified endpoint
    * 
-   * @param endpoint - The endpoint to fetch data from
-   * @param options - Optional parameters for the request
+   * @param endpoint
+   * The endpoint to fetch data from
+   * @param options
+   * Optional parameters for the request
    * @returns A Promise that resolves to the fetched data
    */
   fetch<R extends unknown>(
@@ -73,11 +78,16 @@ export class HypicleError extends Error {
   /**
    * Constructs new {@link HypicleError}
    * 
-   * @param message - The error message
-   * @param status - The HTTP error status code from {@link HypixelError}
-   * @param success - Indicates whether the API request was successful
-   * @param throttle - Indicates if the error is due to a throttle restriction on the API
-   * @param global - Indicates if the throttle is applied to all users
+   * @param message
+   * The error message
+   * @param status
+   * The HTTP error status code from {@link HypixelError}
+   * @param success
+   * Indicates whether the API request was successful
+   * @param throttle
+   * Indicates if the error is due to a throttle restriction on the API
+   * @param global
+   * Indicates if the throttle is applied to all users
    */
   constructor(message: string, public readonly status: number, success: boolean, throttle?: boolean, global?: boolean) {
     super(message);

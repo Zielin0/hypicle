@@ -35,7 +35,7 @@ export class PlayerLeveling {
    * Get network level by provided experience
    * 
    * @param exp - The network experience
-   * @returns The networ level
+   * @returns The network level
    */
   public static getLevel(exp: number): number {
     return exp < 0 ? 1 : Math.floor(1 + this.reverse_prefix + Math.sqrt(this.reverse_const + this.growth_divides * exp));
@@ -44,7 +44,8 @@ export class PlayerLeveling {
   /**
    * Get percentage to the next level
    * 
-   * @param exp - The network experience
+   * @param exp
+   * The network experience
    * @returns The percentage to the next level
    */
   public static getPercentageToNextLevel(exp: number): number {
@@ -56,7 +57,8 @@ export class PlayerLeveling {
   /**
    * Get the experience needed to reach provided level
    * 
-   * @param level - The network level
+   * @param level
+   * The network level
    * @returns The experience needed to reach provided level
    */
   public static getTotalExpToLevel(level: number): number {
@@ -70,7 +72,8 @@ export class PlayerLeveling {
    * From hypixel-php: `Helper method that may only be called by full levels and has the same functionality as getTotalExpToLevel()
    * but doesn't support progress and returns wrong values for progress due to perfect curve shape.`
    * 
-   * @param level - The network level
+   * @param level
+   * The network level
    * @returns The experience needed to reach the full level
    */
   public static getTotalExpToFullLevel(level: number): number {
@@ -93,8 +96,10 @@ export class Player {
   /**
    * Constructs the Player class by UUID
    * 
-   * @param client - The Hypicle Client
-   * @param uuid - The UUID of a player
+   * @param client
+   * The Hypicle Client
+   * @param uuid
+   * The UUID of a player
    */
   constructor(client: Client, uuid: string) {
     this.#client = client;
