@@ -17,7 +17,8 @@ async function printPlayerData(player: Player) {
   
   const name = await player.getName();
   const rank = await player.getHighestRank();
-  const karma = (await player.get())!.karma;
+  const karma = await player.getKarma();
+  const level = (await player.getExactLevel()).toFixed(2);
 
   const firstJoined = dayjs((await player.get())!.firstLogin).format(dateFormat);
   const lastJoined = dayjs((await player.get())!.lastLogin).format(dateFormat);
@@ -26,6 +27,7 @@ async function printPlayerData(player: Player) {
 
   console.log(`${name}'s Hypixel Stats`);
   console.log(`Rank: ${rank}`);
+  console.log(`Level: ${level}`);
   console.log(`Karma: ${karma.toLocaleString('en')}`);
   console.log();
   console.log(`First Joined: ${firstJoined}`);
