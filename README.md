@@ -45,7 +45,9 @@ const client = new Hypicle('YOUR_API_KEY');
 
 See full documentation [here](./docs).
 
-<!-- ## Examples: -->
+## Examples
+
+See some examples [here](./examples).
 
 ## License
 
