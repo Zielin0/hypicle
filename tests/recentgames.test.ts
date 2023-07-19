@@ -1,7 +1,7 @@
-import { describe, expect, test } from '@jest/globals';
+import { describe, expect, test } from 'vitest';
+import { getRecentgames } from '../api';
 import { Hypicle } from '../client';
 import { API_KEY } from './_env';
-import { getRecentgames } from '../api';
 
 describe('Endpoints', () => {
   describe('/recentgames', () => {

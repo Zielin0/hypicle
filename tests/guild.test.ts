@@ -1,7 +1,7 @@
-import { describe, expect, test } from '@jest/globals';
+import { describe, expect, test } from 'vitest';
+import { getGuildByID, getGuildByName } from '../api';
 import { Hypicle } from '../client';
 import { API_KEY } from './_env';
-import { getGuildByID, getGuildByName } from '../api';
 
 describe('Endpoints', () => {
   describe('/guild', () => {

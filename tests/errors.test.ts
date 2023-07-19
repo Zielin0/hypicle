@@ -1,14 +1,14 @@
-import { afterEach, describe, expect, test, jest } from '@jest/globals';
+import { afterEach, describe, expect, test, vitest } from 'vitest';
+import { Player } from '../api';
 import { Hypicle, HypicleError } from '../client';
 import { API_KEY } from './_env';
-import { Player } from '../api';
 
 describe('Error Handling', () => {
   let client: Hypicle;
   const uuid = '7b7e33d55da743d89e9a3ee1660542d5';
 
   afterEach(() => {
-    jest.restoreAllMocks();
+    vitest.restoreAllMocks();
   });
 
   test('Invalid API Key', async () => {
@@ -61,7 +61,7 @@ describe('Error Handling', () => {
 
     const mock = new HypicleError('Missing one or more fields [uuid]', 400, false);
 
-    jest.spyOn(player, 'getPlayerData').mockImplementation(() => {
+    vitest.spyOn(player, 'getPlayerData').mockImplementation(() => {
       throw mock;
     });
 
@@ -83,7 +83,7 @@ describe('Error Handling', () => {
 
     const mock = new HypicleError('Key throttle', 429, false, true, true);
 
-    jest.spyOn(player, 'getPlayerData').mockImplementation(() => {
+    vitest.spyOn(player, 'getPlayerData').mockImplementation(() => {
       throw mock;
     });
 
