@@ -152,7 +152,9 @@ export class Hypicle implements Client {
         throw new HypicleError("Couldn't read response body", res.status, false);
       }
 
-      throw new HypicleError(error.cause, res.status, false);
+      throw new HypicleError(error.cause, res.status, error.success,
+        res.status === 429 && error.throttle,
+        res.status === 429 && error.global);
     };
 
     const res = await call();
