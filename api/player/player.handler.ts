@@ -1,4 +1,4 @@
-import { Client } from '../../client';
+import { Client, HypicleError } from '../../client';
 import { Guild, Session, getGuildByPlayer, getStatus } from '../index';
 import { IPlayer, PlayerResponse, SocialMedia } from './player.types';
 import { Stats } from './stats.handler';
@@ -127,6 +127,8 @@ export class Player {
     if (!this.#playerData) {
       this.#playerData = await this.#fetchPlayerData();
     }
+
+    if (this.#playerData.player === null) throw new HypicleError('Player object is null', 400, false);
 
     return this.#playerData;
   }
