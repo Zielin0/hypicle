@@ -356,7 +356,7 @@ export class SkyWarsMinigame {
   /**
    * Get the legendary drops from the soul well
    */
-  async getSoullWellLegendaries(): Promise<number> {
+  async getSoulWellLegendaries(): Promise<number> {
     return (await this.get())!.soul_well_legendaries;
   }
 
