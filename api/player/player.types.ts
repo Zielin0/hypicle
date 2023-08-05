@@ -1542,12 +1542,23 @@ export interface TNTGamesStats {
   deaths_tntrun: number,
   winstreak: number,
   kills_tntag: number,
+  deaths_tntag: number,
+  wins_tntag: number,
   lastTourneyAd: number,
   deaths_tourney_tnt_run_0: number,
   new_tntrun_speed_potions: number,
   wins_tntrun: number,
   deaths_bowspleef: number,
   tags_bowspleef: number,
+  wins_bowspleef: number,
+  record_pvprun: number,
+  deaths_pvprun: number,
+  wins_pvprun: number,
+  kills_pvprun: number,
+  kills_capture: number,
+  assists_capture: number,
+  wins_capture: number,
+  deaths_capture: number,
 }
 
 export interface UHCStats {

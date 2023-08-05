@@ -99,8 +99,8 @@ export class BedwarsMinigame {
   /**
    * Get BedWars coins
    */
-  async getCoins(): Promise<number> {
-    return (await this.get())!.coins;
+  async getCoins(): Promise<number | undefined> {
+    return (await this.get())?.coins;
   }
 
   /**
@@ -113,85 +113,85 @@ export class BedwarsMinigame {
   /**
    * Get collected Iron
    */
-  async getIronCollected(): Promise<number> {
-    return (await this.get())!.iron_resources_collected_bedwars;
+  async getIronCollected(): Promise<number | undefined> {
+    return (await this.get())?.iron_resources_collected_bedwars;
   }
 
   /**
    * Get collected Gold
    */
-  async getGoldCollected(): Promise<number> {
-    return (await this.get())!.gold_resources_collected_bedwars;
+  async getGoldCollected(): Promise<number | undefined> {
+    return (await this.get())?.gold_resources_collected_bedwars;
   }
 
   /**
    * Get collected Diamonds
    */
-  async getDiamondsCollected(): Promise<number> {
-    return (await this.get())!.diamond_resources_collected_bedwars;
+  async getDiamondsCollected(): Promise<number | undefined> {
+    return (await this.get())?.diamond_resources_collected_bedwars;
   }
 
   /**
    * Get collected Emeralds
    */
-  async getEmeraldsCollected(): Promise<number> {
-    return (await this.get())!.emerald_resources_collected_bedwars;
+  async getEmeraldsCollected(): Promise<number | undefined> {
+    return (await this.get())?.emerald_resources_collected_bedwars;
   }
 
   /**
    * Get the current winstreak
    */
-  async getWinstreak(): Promise<number> {
-    return (await this.get())!.winstreak;
+  async getWinstreak(): Promise<number | undefined> {
+    return (await this.get())?.winstreak;
   }
 
   /**
    * Get BedWars Kills
    */
-  async getKills(): Promise<number> {
-    return (await this.get())!.kills_bedwars;
+  async getKills(): Promise<number | undefined> {
+    return (await this.get())?.kills_bedwars;
   }
 
   /**
    * Get BedWars final Kills
    */
-  async getFinalKills(): Promise<number> {
-    return (await this.get())!.final_kills_bedwars;
+  async getFinalKills(): Promise<number | undefined> {
+    return (await this.get())?.final_kills_bedwars;
   }
 
   /**
    * Get BedWars Deaths
    */
-  async getDeaths(): Promise<number> {
-    return (await this.get())!.deaths_bedwars;
+  async getDeaths(): Promise<number | undefined> {
+    return (await this.get())?.deaths_bedwars;
   }
 
   /**
    * Get BedWars final Deaths
    */
-  async getFinalDeaths(): Promise<number> {
-    return (await this.get())!.final_deaths_bedwars;
+  async getFinalDeaths(): Promise<number | undefined> {
+    return (await this.get())?.final_deaths_bedwars;
   }
 
   /**
    * Get BedWars wins
    */
-  async getWins(): Promise<number> {
-    return (await this.get())!.wins_bedwars;
+  async getWins(): Promise<number | undefined> {
+    return (await this.get())?.wins_bedwars;
   }
 
   /**
    * Get BedWars losses
    */
-  async getLosses(): Promise<number> {
-    return (await this.get())!.losses_bedwars;
+  async getLosses(): Promise<number | undefined> {
+    return (await this.get())?.losses_bedwars;
   }
 
   /**
    * Get broken beds amount
    */
-  async getBedsBroken(): Promise<number> {
-    return (await this.get())!.beds_broken_bedwars;
+  async getBedsBroken(): Promise<number | undefined> {
+    return (await this.get())?.beds_broken_bedwars;
   }
 }
 
@@ -321,8 +321,8 @@ export class SkyWarsMinigame {
   /**
    * Get SkyWars coins
    */
-  async getCoins(): Promise<number> {
-    return (await this.get())!.coins;
+  async getCoins(): Promise<number | undefined> {
+    return (await this.get())?.coins;
   }
 
   /**
@@ -335,147 +335,147 @@ export class SkyWarsMinigame {
   /**
    * Get all souls
    */
-  async getSouls(): Promise<number> {
-    return (await this.get())!.souls;
+  async getSouls(): Promise<number | undefined> {
+    return (await this.get())?.souls;
   }
 
   /**
    * Get souls gathered
    */
-  async getSoulsGathered(): Promise<number> {
-    return (await this.get())!.souls_gathered;
+  async getSoulsGathered(): Promise<number | undefined> {
+    return (await this.get())?.souls_gathered;
   }
 
   /**
    * Get uses of the soul well
    */
-  async getSoulWellUses(): Promise<number> {
-    return (await this.get())!.soul_well;
+  async getSoulWellUses(): Promise<number | undefined> {
+    return (await this.get())?.soul_well;
   }
 
   /**
    * Get the legendary drops from the soul well
    */
-  async getSoulWellLegendaries(): Promise<number> {
-    return (await this.get())!.soul_well_legendaries;
+  async getSoulWellLegendaries(): Promise<number | undefined> {
+    return (await this.get())?.soul_well_legendaries;
   }
 
   /**
    * Get the rare drops from the soul well
    */
-  async getSoulWellRares(): Promise<number> {
-    return (await this.get())!.soul_well_rares;
+  async getSoulWellRares(): Promise<number | undefined> {
+    return (await this.get())?.soul_well_rares;
   }
 
   /**
    * Get the amount of opened chests
    */
-  async getChestsOpened(): Promise<number> {
-    return (await this.get())!.chests_opened;
+  async getChestsOpened(): Promise<number | undefined> {
+    return (await this.get())?.chests_opened;
   }
 
   /**
    * Get the amount of broken blocks
    */
-  async getBlocksBroken(): Promise<number> {
-    return (await this.get())!.blocks_broken;
+  async getBlocksBroken(): Promise<number | undefined> {
+    return (await this.get())?.blocks_broken;
   }
 
   /**
    * Get the amount of placed blocks
    */
-  async getBlocksPlaced(): Promise<number> {
-    return (await this.get())!.blocks_placed;
+  async getBlocksPlaced(): Promise<number | undefined> {
+    return (await this.get())?.blocks_placed;
   }
 
   /**
    * Get the amount of thrown Eggs
    */
-  async getEggs(): Promise<number> {
-    return (await this.get())!.egg_thrown;
+  async getEggs(): Promise<number | undefined> {
+    return (await this.get())?.egg_thrown;
   }
 
   /**
    * Get the amount of thrown Enderpearls
    */
-  async getEnderpearls(): Promise<number> {
-    return (await this.get())!.enderpearls_thrown;
+  async getEnderpearls(): Promise<number | undefined> {
+    return (await this.get())?.enderpearls_thrown;
   }
 
   /**
    * Get the amount of shot arrows
    */
-  async getArrowsShot(): Promise<number> {
-    return (await this.get())!.arrows_shot;
+  async getArrowsShot(): Promise<number | undefined> {
+    return (await this.get())?.arrows_shot;
   }
 
   /**
    * Get the amount of arrows that hit
    */
-  async getArrowsHit(): Promise<number> {
-    return (await this.get())!.arrows_hit;
+  async getArrowsHit(): Promise<number | undefined> {
+    return (await this.get())?.arrows_hit;
   }
 
   /**
    * Get the current winstreak
    */
-  async getWinstreak(): Promise<number> {
-    return (await this.get())!.win_streak;
+  async getWinstreak(): Promise<number | undefined> {
+    return (await this.get())?.win_streak;
   }
 
   /**
    * Get SkyWars Kills
    */
-  async getKills(): Promise<number> {
-    return (await this.get())!.kills;
+  async getKills(): Promise<number | undefined> {
+    return (await this.get())?.kills;
   }
 
   /**
    * Get SkyWars void Kills
    */
-  async getVoidKills(): Promise<number> {
-    return (await this.get())!.void_kills;
+  async getVoidKills(): Promise<number | undefined> {
+    return (await this.get())?.void_kills;
   }
 
   /**
    * Get SkyWars Assists
    */
-  async getAssists(): Promise<number> {
-    return (await this.get())!.assists;
+  async getAssists(): Promise<number | undefined> {
+    return (await this.get())?.assists;
   }
 
   /**
    * Get SkyWars Deaths
    */
-  async getDeaths(): Promise<number> {
-    return (await this.get())!.deaths;
+  async getDeaths(): Promise<number | undefined> {
+    return (await this.get())?.deaths;
   }
 
   /**
    * Get SkyWars wins
    */
-  async getWins(): Promise<number> {
-    return (await this.get())!.wins;
+  async getWins(): Promise<number | undefined> {
+    return (await this.get())?.wins;
   }
 
   /**
    * Get SkyWars losses
    */
-  async getLosses(): Promise<number> {
-    return (await this.get())!.losses;
+  async getLosses(): Promise<number | undefined> {
+    return (await this.get())?.losses;
   }
 
   /**
    * Get the amount of collected heads
    */
-  async getHeads(): Promise<number> {
-    return (await this.get())!.heads;
+  async getHeads(): Promise<number | undefined> {
+    return (await this.get())?.heads;
   }
 
   /**
    * Get the head collection
    */
-  async getHeadCollection(): Promise<HeadCollection> {
-    return (await this.get())!.head_collection;
+  async getHeadCollection(): Promise<HeadCollection | undefined> {
+    return (await this.get())?.head_collection;
   }
 }
