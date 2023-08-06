@@ -1457,6 +1457,12 @@ export interface ArcadeStats {
   total_stars_party: number,
   eggs_found_easter_simulator: number,
   wins_easter_simulator: number,
+  seeker_wins_hide_and_seek: number,
+  hider_wins_hide_and_seek: number,
+  party_pooper_seeker_wins_hide_and_seek: number,
+  party_pooper_hider_wins_hide_and_seek: number,
+  wins_mini_walls: number,
+  wins_party: number,
 }
 
 export interface PixelPartyStats {

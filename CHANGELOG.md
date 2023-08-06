@@ -1,5 +1,9 @@
 # Hypicle changelog (v1.0.0 - present)
 
+## [1.0.5] - 2023-08-06
+### Fixes
+- Add some missing fields to `ArcadeStats` interface.
+
 ## [1.0.4] - 2023-08-06
 ### Fixes
 - Issue with undefined fields in `api/player/minigames.handler.ts`.
