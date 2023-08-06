@@ -107,7 +107,7 @@ export class BedwarsMinigame {
    * Get BedWars level
    */
   async getLevel(): Promise<number> {
-    return BedwarsLeveling.getLevelByExp((await this.get())!.Experience);
+    return BedwarsLeveling.getLevelByExp((await this.get())?.Experience || 0);
   }
 
   /**
@@ -329,7 +329,7 @@ export class SkyWarsMinigame {
    * Get SkyWars level
    */
   async getLevel(): Promise<number> {
-    return SkyWarsLeveling.getLevelByExp((await this.get())!.skywars_experience);
+    return SkyWarsLeveling.getLevelByExp((await this.get())?.skywars_experience || 0);
   }
 
   /**
