@@ -215,6 +215,24 @@ export class Player {
   }
 
   /**
+   * Get the rank plus color
+   */
+  async getPlusColor(): Promise<string | null> {
+    const rank = await this.getHighestRank();
+
+    switch (rank) {
+      case 'MVP_PLUS':
+      case 'SUPERSTAR':
+        const { rankPlusColor } = (await this.getPlayerData()).player;
+        return rankPlusColor || 'RED';
+      case 'VIP_PLUS':
+        return 'GOLD';
+      default:
+        return null;
+    }
+  }
+
+  /**
    * Get the display name of the player
    */
   async getName(): Promise<string> {

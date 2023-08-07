@@ -26,6 +26,7 @@ List of all `Player` methods:
 - `getGuild` - Get the guild membership of the player or null
 - `isStaff` - Check if the player is in the staff team
 - `getHighestRank` - Get the highest rank of the player
+- `getPlusColor` - Get the rank plus color
 - `getName` - Get the display name of the player
 - `getRecentGameType` - Get recently played games by the player
 - `getSocialMedia` - Get player connected social media

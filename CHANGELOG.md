@@ -1,5 +1,9 @@
 # Hypicle changelog (v1.0.0 - present)
 
+## [1.0.6] - 2023-08-07
+### New Features
+- `getPlusColor` - Get the rank plus color on player
+
 ## [1.0.5] - 2023-08-06
 ### Fixes
 - Add some missing fields to `ArcadeStats` interface.

@@ -1,4 +1,4 @@
-# Hypicle v1.0.5
+# Hypicle v1.0.6
 
 ## How to get the API Key?
 
