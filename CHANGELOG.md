@@ -1,5 +1,14 @@
 # Hypicle changelog (v1.0.0 - present)
 
+## [1.1.2] - 2023-08-08
+### New Features
+- `getDescription` getter on `Guild`
+- `isPubliclyListed` getter on `Guild`
+- `getMembersCount` getter on `Guild`
+
+### Fixes
+- This update fixes #6
+
 ## [1.1.1] - 2023-08-08
 ### Fixes
 - Don't throw an error if `Guild` is null

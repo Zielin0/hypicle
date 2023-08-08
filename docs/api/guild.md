@@ -21,8 +21,10 @@ List of all `Guild` methods:
 - `getID` - Get the ID of the guild
 - `getName` - Get the guild name
 - `getNameLower` - Get the guild name in lower case
+- `getDescription` - Get the description of the guild
 - `getCreatedAt` - Get the guild creation timestamp
-- `isJoinable` - Check if the guild is publicly listed
+- `isJoinable` - Check if the guild is joinable
+- `isPubliclyListed` - Check if the guild is publicly listed
 - `getExperience` - Get experience of the guild
 - `getLevel` - Get the level of the guild (see [Leveling](#leveling))
 - `getTag` - Get the guild tag
@@ -30,6 +32,7 @@ List of all `Guild` methods:
 - `getLegacyRanking` - Get the guild legacy ranking
 - `getCoins` - Get guild coins amount
 - `getCoinsEver` - Get the guild coins ever amount
+- `getMembersCount` - Get the members count of the guild
 - `getMembers` - Get the members list of the guild
 - `getAchievements` - Get the achievements of the guild
 - `getPreferredGames` - Get preferred games of the guild

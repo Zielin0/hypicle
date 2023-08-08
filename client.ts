@@ -154,7 +154,7 @@ export class Hypicle implements Client {
 
       throw new HypicleError(error.cause, res.status, error.success,
         res.status === 429 && error.throttle,
-        res.status === 429 && error.global);
+        res.status === 429 && (error.global || false));
     };
 
     const res = await call();

@@ -128,6 +128,13 @@ export class Guild {
   }
 
   /**
+   * Get the description of the guild
+   */
+  async getDescription(): Promise<string | null> {
+    return (await this.getGuildData()).guild.description ?? null;
+  }
+
+  /**
    * Get the guild creation timestamp
    */
   async getCreatedAt(): Promise<number> {
@@ -135,10 +142,17 @@ export class Guild {
   }
 
   /**
-   * Check if the guild is publicly listed
+   * Check if the guild is joinable
    */
   async isJoinable(): Promise<boolean> {
     return (await this.getGuildData()).guild.joinable;
+  }
+
+  /**
+   * Check if the guild is publicly listed
+   */
+  async isPubliclyListed(): Promise<boolean> {
+    return (await this.getGuildData()).guild.publiclyListed;
   }
 
   /**
@@ -172,8 +186,8 @@ export class Guild {
   /**
    * Get the guild legacy ranking
    */
-  async getLegacyRanking(): Promise<number> {
-    return (await this.getGuildData()).guild.legacyRanking;
+  async getLegacyRanking(): Promise<number | null> {
+    return (await this.getGuildData()).guild.legacyRanking ?? null;
   }
 
   /**
@@ -188,6 +202,13 @@ export class Guild {
    */
   async getCoinsEver(): Promise<number> {
     return (await this.getGuildData()).guild.coinsEver;
+  }
+
+  /**
+   * Get the members count of the guild
+   */
+  async getMembersCount(): Promise<number> {
+    return (await this.getGuildData()).guild.members.length;
   }
 
   /**
