@@ -6,20 +6,45 @@ This endpoint returns Guild data by a player, name or id
 
 ### Usage
 
+Create a new `Guild` object with client, id and guild type.
+
 Example:
 ```ts
-const guild = await getGuildByPlayer(client, 'uuid');
-// result: 'GuildResponse' interface with data
+const guild = new Guild(client, 'guild name', 'name');
 ```
 
-### Other function
+### Other functions
 
-You can also get a Guild by the name or id.
+List of all `Guild` methods:
+- `getGuildData` - Get the guild data and cache it to a variable
+- `get` - Get the guild
+- `getID` - Get the ID of the guild
+- `getName` - Get the guild name
+- `getNameLower` - Get the guild name in lower case
+- `getCreatedAt` - Get the guild creation timestamp
+- `isJoinable` - Check if the guild is publicly listed
+- `getExperience` - Get experience of the guild
+- `getLevel` - Get the level of the guild (see [Leveling](#leveling))
+- `getTag` - Get the guild tag
+- `getTagColor` - Get the guild tag color
+- `getLegacyRanking` - Get the guild legacy ranking
+- `getCoins` - Get guild coins amount
+- `getCoinsEver` - Get the guild coins ever amount
+- `getMembers` - Get the members list of the guild
+- `getAchievements` - Get the achievements of the guild
+- `getPreferredGames` - Get preferred games of the guild
+- `getExpByGame` - Get the guild experience by game type
 
-List of all getters:
-- `getGuildByPlayer` - Get Guild info by player UUID
-- `getGuildByID` - Get Guild info by Guild ID
-- `getGuildByName` - Get Guild info by Guild Name
+### Leveling
+
+#### Guild has its own leveling system.
+
+See [Guild](https://github.com/Plancke/hypixel-php/blob/master/src/responses/guild/GuildLevelUtil.php) Leveling system implementation by [Plancke](https://github.com/plancke).
+
+You can use `GuildLeveling` in your project.
+
+List of all `GuildLeveling` methods:
+- `getLevel` - Get guild level by provided experience
 
 
 Go back to [`docs/`](../README.md)

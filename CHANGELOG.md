@@ -1,5 +1,9 @@
 # Hypicle changelog (v1.0.0 - present)
 
+## [1.1.0] - 2023-08-08
+### New Features
+- `Guild` class with getters for data.
+
 ## [1.0.6] - 2023-08-07
 ### New Features
 - `getPlusColor` - Get the rank plus color on player

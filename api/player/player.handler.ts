@@ -1,5 +1,5 @@
 import { Client, HypicleError } from '../../client';
-import { Guild, Session, getGuildByPlayer, getStatus } from '../index';
+import { Guild, IGuild, Session, getStatus } from '../index';
 import { IPlayer, PlayerResponse, SocialMedia } from './player.types';
 import { Stats } from './stats.handler';
 
@@ -185,9 +185,9 @@ export class Player {
   /**
    * Get the guild membership of the player or null
    */
-  async getGuild(): Promise<Guild | null> {
-    const { guild } = await getGuildByPlayer(this.#client, this.#uuid);
-    return guild ?? null;
+  async getGuild(): Promise<IGuild | null> {
+    const guild = new Guild(this.#client, this.#uuid, 'player');
+    return (await guild.get()) ?? null;
   }
 
   /**

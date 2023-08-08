@@ -1,9 +1,9 @@
 export interface GuildResponse {
   success: boolean,
-  guild: Guild | null,
+  guild: IGuild,
 }
 
-export interface Guild {
+export interface IGuild {
   _id: string,
   name: string,
   name_lower: string,
@@ -71,3 +71,5 @@ export interface GuildExpByType {
   REPLAY: number,
   GINGERBREAD: number,
 }
+
+export type GuildType = 'id' | 'name' | 'player';
