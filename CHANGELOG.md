@@ -1,5 +1,9 @@
 # Hypicle changelog (v1.0.0 - present)
 
+## [1.1.1] - 2023-08-08
+### Fixes
+- Don't throw an error if `Guild` is null
+
 ## [1.1.0] - 2023-08-08
 ### New Features
 - `Guild` class with getters for data.

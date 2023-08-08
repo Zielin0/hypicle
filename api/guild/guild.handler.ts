@@ -1,4 +1,4 @@
-import { Client, HypicleError } from '../../client';
+import { Client } from '../../client';
 import { GuildAchievements, GuildExpByType, GuildMember, GuildResponse, GuildType, IGuild } from './guild.types';
 
 /**
@@ -95,9 +95,7 @@ export class Guild {
     if (!this.#guildData) {
       this.#guildData = await this.#fetchGuildData();
     }
-
-    if (this.#guildData.guild === null) throw new HypicleError('Guild object is null', 400, false);
-
+    
     return this.#guildData;
   }
 
