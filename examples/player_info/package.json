@@ -12,6 +12,6 @@
   "license": "MIT",
   "dependencies": {
     "dayjs": "^1.11.9",
-    "hypicle": "^1.0.0"
+    "hypicle": "^1.1.2"
   }
 }

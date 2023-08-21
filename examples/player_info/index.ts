@@ -23,6 +23,8 @@ async function printPlayerData(player: Player) {
   const firstJoined = dayjs((await player.get())!.firstLogin).format(dateFormat);
   const lastJoined = dayjs((await player.get())!.lastLogin).format(dateFormat);
 
+  const status = await player.getStatus();
+
   const recentGame = await player.getRecentGameType();
 
   console.log(`${name}'s Hypixel Stats`);
@@ -33,6 +35,7 @@ async function printPlayerData(player: Player) {
   console.log(`First Joined: ${firstJoined}`);
   console.log(`Last Joined: ${lastJoined}`);
   console.log();
+  console.log(`Online: ${status.online ? 'Yes' : 'No'}`);
   console.log(`Recent Game Type: ${recentGame}`);
 }
 
