@@ -16,6 +16,13 @@ console.log(`Rank: ${rank}`);
 console.log(`Online: ${status.online}`);
 ```
 
+## Hypicler
+
+**Hypicler is a web app for checking some stats from hypixel**
+
+- Source Code: [Zielin0/hypicler](https://github.com/Zielin0/hypicler)
+- Try It: [hypicler.pages.dev](https://hypicler.pages.dev)
+
 ## Player info example
 
 Running:
