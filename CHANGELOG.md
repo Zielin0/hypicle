@@ -1,5 +1,9 @@
 # Hypicle changelog (v1.0.0 - present)
 
+## [1.1.3] - 2023-08-21
+### Fixes
+- `/key` endpoint is no longer available
+
 ## [1.1.2] - 2023-08-08
 ### New Features
 - `getDescription` getter on `Guild`

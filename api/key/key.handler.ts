@@ -2,11 +2,12 @@ import { Client } from '../../client';
 import { Key } from './key.types';
 
 /**
- * Get informations about the API Key
+ * This endpoint is no longer available
+ * It'll return 404 error.
  * 
  * @param client
  * The Hypicle Client
- * @returns API {@link Key} info interface
+ * @returns 404 Error
  * @deprecated
  */
 export const getKey = async (client: Client) => {
