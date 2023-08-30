@@ -10,7 +10,7 @@ All endpoints require the `Hypicle` client, and some endpoints require additiona
 - [boosters](./boosters.md) - Currently active boosters
 - [counts](./counts.md) - Active players count
 - [guild](./guild.md) - Guild information
-- [key](./key.md) - Key information
+- [key](./key.md) - Key information (deprecated)
 - [leaderboards](./leaderboards.md) - Global Leaderboards information
 - [player](./player.md) - Player information & statistics
 - [punishments](./punishments.md) - Punishment statistics

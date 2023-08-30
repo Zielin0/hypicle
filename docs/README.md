@@ -1,4 +1,4 @@
-# Hypicle v1.1.3
+# Hypicle v1.1.4
 
 ## How to get the API Key?
 
@@ -20,7 +20,7 @@ const client = new Hypicle('YOUR_API_KEY');
   - [api/boosters](./api/boosters.md) - Currently active boosters
   - [api/counts](./api/counts.md) - Active players count
   - [api/guild](./api/guild.md) - Guild information
-  - [api/key](./api/key.md) - API Key information
+  - [api/key](./api/key.md) - API Key information (deprecated)
   - [api/leaderboards](./api/leaderboards.md) - Global Leaderboards information
   - [api/player](./api/player.md) - Player information & statistics
   - [api/punishments](./api/punishments.md) - Punishment statistics

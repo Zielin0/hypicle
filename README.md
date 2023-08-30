@@ -43,15 +43,15 @@ const client = new Hypicle('YOUR_API_KEY');
 
 ## Full Documentation
 
-See full documentation [here](./docs).
+See full documentation [here](https://hypicle.zielinus.xyz).
 
 ## Examples
 
-See some examples [here](./examples).
+See some examples [here](https://github.com/Zielin0/hypicle/tree/master/examples).
 
 ## License
 
-This project is under the [MIT](./LICENSE) License.
+This project is under the [MIT](https://github.com/Zielin0/hypicle/tree/master/LICENSE) License.
 
 ## Additional Resources
 

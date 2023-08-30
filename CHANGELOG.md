@@ -1,5 +1,9 @@
 # Hypicle changelog (v1.0.0 - present)
 
+## [1.1.4] - 2023-08-30
+### Documentation
+- Some fixes here and there
+
 ## [1.1.3] - 2023-08-21
 ### Fixes
 - `/key` endpoint is no longer available
