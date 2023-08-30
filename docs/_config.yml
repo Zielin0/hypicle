@@ -1,0 +1,4 @@
+theme: just-the-docs
+plugins:
+  - jekyll-remote-theme
+remote_theme: pmarsceill/just-the-docs
