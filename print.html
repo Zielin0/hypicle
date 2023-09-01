@@ -218,7 +218,6 @@ const client = new Hypicle('YOUR_API_KEY');
 <li><a href="api/./recentgames.html">recentgames</a> - Recent games of a player</li>
 <li><a href="api/./status.html">status</a> - Status of a player</li>
 </ul>
-<p>Go back to <a href="api/../README.html"><code>docs/</code></a></p>
 <div style="break-before: page; page-break-before: always;"></div><h2 id="boosters-endpoint-implementation"><a class="header" href="#boosters-endpoint-implementation">Boosters Endpoint implementation</a></h2>
 <p>Hypixel API Endpoint: <code>api.hypixel.net/boosters</code></p>
 <p>This endpoint returns all Active Network Boosters</p>
@@ -227,7 +226,6 @@ const client = new Hypicle('YOUR_API_KEY');
 <pre><code class="language-ts">const boosters = await getBoosters(client);
 // result: 'Boosters' interface with data
 </code></pre>
-<p>Go back to <a href="api/../README.html"><code>docs/</code></a></p>
 <div style="break-before: page; page-break-before: always;"></div><h2 id="counts-endpoint-implementation"><a class="header" href="#counts-endpoint-implementation">Counts Endpoint implementation</a></h2>
 <p>Hypixel API Endpoint: <code>api.hypixel.net/counts</code></p>
 <p>This endpoint returns Current Player Count Status.</p>
@@ -269,7 +267,6 @@ const client = new Hypicle('YOUR_API_KEY');
 <li><code>getIdle</code> - Get active Idle players count statistics</li>
 <li><code>getQueue</code> - Get active players count statistics in Queue</li>
 </ul>
-<p>Go back to <a href="api/../README.html"><code>docs/</code></a></p>
 <div style="break-before: page; page-break-before: always;"></div><h2 id="guild-endpoint-implementation"><a class="header" href="#guild-endpoint-implementation">Guild Endpoint implementation</a></h2>
 <p>Hypixel API Endpoint: <code>api.hypixel.net/guild</code></p>
 <p>This endpoint returns Guild data by a player, name or id</p>
@@ -311,7 +308,6 @@ const client = new Hypicle('YOUR_API_KEY');
 <ul>
 <li><code>getLevel</code> - Get guild level by provided experience</li>
 </ul>
-<p>Go back to <a href="api/../README.html"><code>docs/</code></a></p>
 <div style="break-before: page; page-break-before: always;"></div><h2 id="key-endpoint-implementation"><a class="header" href="#key-endpoint-implementation">Key Endpoint implementation</a></h2>
 <h3 id="this-endpoint-is-no-longer-available"><a class="header" href="#this-endpoint-is-no-longer-available">This endpoint is no longer available</a></h3>
 <p>Hypixel API Endpoint: <code>api.hypixel.net/key</code></p>
@@ -321,7 +317,6 @@ const client = new Hypicle('YOUR_API_KEY');
 <pre><code class="language-ts">const key = await getKey(client);
 // result: 'Key' interface with data
 </code></pre>
-<p>Go back to <a href="api/../README.html"><code>docs/</code></a></p>
 <div style="break-before: page; page-break-before: always;"></div><h2 id="leaderboards-endpoint-implementation"><a class="header" href="#leaderboards-endpoint-implementation">Leaderboards Endpoint implementation</a></h2>
 <p>Hypixel API Endpoint: <code>api.hypixel.net/leaderboards</code></p>
 <p>This endpoint returns Current Leaderboards</p>
@@ -361,7 +356,6 @@ const client = new Hypicle('YOUR_API_KEY');
 <li><code>getLeaderboardsBattleground</code> - Get global Warlords Leaderboards statistics</li>
 <li><code>getLeaderboardsArena</code> - Get global Arena Leaderboards statistics</li>
 </ul>
-<p>Go back to <a href="api/../README.html"><code>docs/</code></a></p>
 <div style="break-before: page; page-break-before: always;"></div><h2 id="player-endpoint-implementation"><a class="header" href="#player-endpoint-implementation">Player Endpoint implementation</a></h2>
 <p>Hypixel API Endpoint: <code>api.hypixel.net/player</code></p>
 <p>This endpoint returns the player data by uuid</p>
@@ -488,7 +482,6 @@ const client = new Hypicle('YOUR_API_KEY');
 <li><code>getLevelByExp</code> - Get SkyWars Level by provided experience</li>
 <li><code>getExpByLevel</code> - Get SkyWars Experience by provided Level</li>
 </ul>
-<p>Go back to <a href="api/../README.html"><code>docs/</code></a></p>
 <div style="break-before: page; page-break-before: always;"></div><h2 id="punishments-endpoint-implementation"><a class="header" href="#punishments-endpoint-implementation">Punishments Endpoint implementation</a></h2>
 <p>Hypixel API Endpoint: <code>api.hypixel.net/punishmentstats</code></p>
 <p>This endpoint returns global Punishment Statistics</p>
@@ -497,7 +490,6 @@ const client = new Hypicle('YOUR_API_KEY');
 <pre><code class="language-ts">const punishments = await getPunishments(client);
 // result: 'Punishments' interface with data
 </code></pre>
-<p>Go back to <a href="api/../README.html"><code>docs/</code></a></p>
 <div style="break-before: page; page-break-before: always;"></div><h2 id="recent-games-endpoint-implementation"><a class="header" href="#recent-games-endpoint-implementation">Recent Games Endpoint implementation</a></h2>
 <p>Hypixel API Endpoint: <code>api.hypixel.net/recentgames</code></p>
 <p>This endpoint returns Recently played games of a specific player by uuid</p>
@@ -506,7 +498,6 @@ const client = new Hypicle('YOUR_API_KEY');
 <pre><code class="language-ts">const recentgames = await getRecentgames(client, 'uuid');
 // result: 'Recentgames' interface with data
 </code></pre>
-<p>Go back to <a href="api/../README.html"><code>docs/</code></a></p>
 <div style="break-before: page; page-break-before: always;"></div><h2 id="status-endpoint-implementation"><a class="header" href="#status-endpoint-implementation">Status Endpoint implementation</a></h2>
 <p>Hypixel API Endpoint: <code>api.hypixel.net/status</code></p>
 <p>This endpoint returns the Current Online status of a player by uuid</p>
@@ -515,7 +506,6 @@ const client = new Hypicle('YOUR_API_KEY');
 <pre><code class="language-ts">const status = await getStatus(client, 'uuid');
 // result: 'Status' interface with data
 </code></pre>
-<p>Go back to <a href="api/../README.html"><code>docs/</code></a></p>
 <div style="break-before: page; page-break-before: always;"></div><h2 id="hypicle-client"><a class="header" href="#hypicle-client">Hypicle Client</a></h2>
 <p>The <code>Hypicle</code> Client is the main entry point to interact with the Hypixel API.</p>
 <p>To use the client, you need to construct it with your API Key.</p>
@@ -562,7 +552,6 @@ const client = new Hypicle('YOUR_API_KEY');
 <p>Example error throw:</p>
 <pre><code class="language-ts">throw new HypicleError('Invalid API Key', 403, false);
 </code></pre>
-<p>Go back to <a href="./README.html"><code>docs/</code></a></p>
 <div style="break-before: page; page-break-before: always;"></div><h2 id="hypicle-utils"><a class="header" href="#hypicle-utils">Hypicle Utils</a></h2>
 <p>This is an internal extension for the Hypicle Client.</p>
 <p><strong>You don't need to use any of the utils functions in your code.</strong></p>
@@ -624,7 +613,6 @@ const result = mapObjectFields(obj, mapping);
 </code></pre>
 </li>
 </ol>
-<p>Go back to <a href="./README.html"><code>docs/</code></a></p>
 
                     </main>
 
