@@ -46,5 +46,3 @@ List of all getters:
 - `getIdle` - Get active Idle players count statistics
 - `getQueue` - Get active players count statistics in Queue
 
-
-Go back to [`docs/`](../README.md)

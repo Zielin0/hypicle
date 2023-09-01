@@ -49,5 +49,3 @@ You can use `GuildLeveling` in your project.
 List of all `GuildLeveling` methods:
 - `getLevel` - Get guild level by provided experience
 
-
-Go back to [`docs/`](../README.md)

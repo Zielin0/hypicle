@@ -17,5 +17,3 @@ All endpoints require the `Hypicle` client, and some endpoints require additiona
 - [recentgames](./recentgames.md) - Recent games of a player
 - [status](./status.md) - Status of a player
 
-
-Go back to [`docs/`](../README.md)

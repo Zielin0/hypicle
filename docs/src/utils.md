@@ -67,5 +67,3 @@ This is an internal extension for the Hypicle Client.
     // result: { uuid: 123, username: 'johndoe1', age: 30 }
     ```
 
-
-Go back to [`docs/`](./README.md)

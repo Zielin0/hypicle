@@ -12,5 +12,3 @@ const boosters = await getBoosters(client);
 // result: 'Boosters' interface with data
 ```
 
-
-Go back to [`docs/`](../README.md)

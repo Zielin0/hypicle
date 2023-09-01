@@ -138,5 +138,3 @@ List of all `SkyWarsLeveling` methods:
 - `getLevelByExp` - Get SkyWars Level by provided experience
 - `getExpByLevel` - Get SkyWars Experience by provided Level
 
-
-Go back to [`docs/`](../README.md)

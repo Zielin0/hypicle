@@ -12,5 +12,3 @@ const status = await getStatus(client, 'uuid');
 // result: 'Status' interface with data
 ```
 
-
-Go back to [`docs/`](../README.md)

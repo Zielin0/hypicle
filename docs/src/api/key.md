@@ -14,6 +14,3 @@ Example:
 const key = await getKey(client);
 // result: 'Key' interface with data
 ```
-
-
-Go back to [`docs/`](../README.md)

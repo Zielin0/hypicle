@@ -12,5 +12,3 @@ const punishments = await getPunishments(client);
 // result: 'Punishments' interface with data
 ```
 
-
-Go back to [`docs/`](../README.md)

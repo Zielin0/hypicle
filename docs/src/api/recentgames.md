@@ -12,5 +12,3 @@ const recentgames = await getRecentgames(client, 'uuid');
 // result: 'Recentgames' interface with data
 ```
 
-
-Go back to [`docs/`](../README.md)

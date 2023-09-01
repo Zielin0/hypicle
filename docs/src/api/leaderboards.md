@@ -45,5 +45,3 @@ List of all getters:
 - `getLeaderboardsBattleground` - Get global Warlords Leaderboards statistics
 - `getLeaderboardsArena` - Get global Arena Leaderboards statistics
 
-
-Go back to [`docs/`](../README.md)

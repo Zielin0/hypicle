@@ -57,5 +57,3 @@ Example error throw:
 throw new HypicleError('Invalid API Key', 403, false);
 ```
 
-
-Go back to [`docs/`](./README.md)
