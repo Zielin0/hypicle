@@ -1,5 +1,7 @@
 # Hypicle v1.1.4
 
+[Hypicle on NPM](https://www.npmjs.com/package/hypicle)
+
 ## How to get the API Key?
 
 1. Visit the [Hypixel Developer Dashboard](https://developer.hypixel.net/).

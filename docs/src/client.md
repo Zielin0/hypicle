@@ -13,11 +13,11 @@ import { Hypicle } from 'hypicle';
 const client = new Hypicle('YOUR_API_KEY');
 ```
 
-[How to get the API Key](./README.md#how-to-get-the-api-key)
+[How to get the API Key](README.md#how-to-get-the-api-key)
 
 ### Fetching an endpoint
 
-**Hypicle already provides implementation for some endpoints, see [Hypicle Structure](./README.md#hypicle-structure)**.
+**Hypicle already provides implementation for some endpoints, see [Hypicle Structure](README.md#hypicle-structure)**.
 
 The `Hypicle` Client implements two fetching methods.
 
