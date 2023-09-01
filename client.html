@@ -1,0 +1,267 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Client</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = null;
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Introduction</a></li><li class="chapter-item expanded "><a href="api/index.html"><strong aria-hidden="true">1.</strong> Api</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="api/boosters.html"><strong aria-hidden="true">1.1.</strong> Boosters</a></li><li class="chapter-item expanded "><a href="api/counts.html"><strong aria-hidden="true">1.2.</strong> Counts</a></li><li class="chapter-item expanded "><a href="api/guild.html"><strong aria-hidden="true">1.3.</strong> Guild</a></li><li class="chapter-item expanded "><a href="api/key.html"><strong aria-hidden="true">1.4.</strong> key</a></li><li class="chapter-item expanded "><a href="api/leaderboards.html"><strong aria-hidden="true">1.5.</strong> Leaderboard</a></li><li class="chapter-item expanded "><a href="api/player.html"><strong aria-hidden="true">1.6.</strong> Player</a></li><li class="chapter-item expanded "><a href="api/punishments.html"><strong aria-hidden="true">1.7.</strong> Punishments</a></li><li class="chapter-item expanded "><a href="api/recentgames.html"><strong aria-hidden="true">1.8.</strong> Recent Games</a></li><li class="chapter-item expanded "><a href="api/status.html"><strong aria-hidden="true">1.9.</strong> Status</a></li></ol></li><li class="chapter-item expanded "><a href="client.html" class="active"><strong aria-hidden="true">2.</strong> Client</a></li><li class="chapter-item expanded "><a href="utils.html"><strong aria-hidden="true">3.</strong> Utils</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="hypicle-client"><a class="header" href="#hypicle-client">Hypicle Client</a></h2>
+<p>The <code>Hypicle</code> Client is the main entry point to interact with the Hypixel API.</p>
+<p>To use the client, you need to construct it with your API Key.</p>
+<h3 id="constructing-the-client"><a class="header" href="#constructing-the-client">Constructing the Client</a></h3>
+<p>To create a new <code>Hypicle</code> Client instance, you can follow the steps below:</p>
+<pre><code class="language-ts">import { Hypicle } from 'hypicle';
+
+const client = new Hypicle('YOUR_API_KEY');
+</code></pre>
+<p><a href="./README.html#how-to-get-the-api-key">How to get the API Key</a></p>
+<h3 id="fetching-an-endpoint"><a class="header" href="#fetching-an-endpoint">Fetching an endpoint</a></h3>
+<p><strong>Hypicle already provides implementation for some endpoints, see <a href="./README.html#hypicle-structure">Hypicle Structure</a></strong>.</p>
+<p>The <code>Hypicle</code> Client implements two fetching methods.</p>
+<ol>
+<li>
+<p><code>fetch</code> method:</p>
+<p>The <code>fetch</code> method fetches data from the Hypixel API without applying any mappings, it also checks for any errors and then returns the fetched data.</p>
+<p>Parameters:</p>
+<ul>
+<li><code>endpoint</code> (<code>string</code>, required) - The endpoint to fetch data from.</li>
+<li><code>options</code> (<code>Options</code>, optional) - Optional URL parameters for the request.</li>
+</ul>
+</li>
+<li>
+<p><code>fetchMapping</code> method:</p>
+<p>The <code>fetchMapping</code> method uses the <code>fetch</code> method, it takes a <code>FieldMap&lt;R&gt;</code> as one of the parameters, then maps the API response to the provided mapping.</p>
+<p>Parameters:</p>
+<ul>
+<li><code>endpoint</code> (<code>string</code>, required) - The endpoint to fetch data from.</li>
+<li><code>mapping</code> (<code>FieldMap&lt;R&gt;</code>, required) - The map to apply to the fetched data.</li>
+<li><code>options</code> (<code>Options</code>, optional) - Optional URL parameters for the request.</li>
+</ul>
+</li>
+</ol>
+<p>Both methods are async and use Promises.</p>
+<p>Example:</p>
+<pre><code class="language-ts">async function callEndpoint&lt;R extends unknown&gt;(client: Client): Promise&lt;R&gt; {
+  return await client.fetch&lt;R&gt;('endpoint');
+}
+</code></pre>
+<h3 id="error-handling"><a class="header" href="#error-handling">Error handling</a></h3>
+<p>When Hypixel API fails then Hypicle catches it and throws a custom error interface.</p>
+<p>The <code>HypicleError</code> interface provides useful information about the error like a message, status code, throttle, and if the throttle is global.</p>
+<p>Example error throw:</p>
+<pre><code class="language-ts">throw new HypicleError('Invalid API Key', 403, false);
+</code></pre>
+<p>Go back to <a href="./README.html"><code>docs/</code></a></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="api/status.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="utils.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="api/status.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="utils.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
