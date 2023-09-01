@@ -12,3 +12,5 @@
   - [Punishments](api/punishments.md)
   - [Recent Games](api/recentgames.md)
   - [Status](api/status.md)
+- [Client](client.md)
+- [Utils](utils.md)
